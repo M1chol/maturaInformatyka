@@ -23,7 +23,6 @@ with open('dane.txt') as dane:
             if czy_pal(liczba_system): temp[inx]+=1
         wszystko.append((liczba, temp))
 wszystko = sorted(wszystko, key=lambda x: sum(x[1]), reverse=True)[:3]
-print(wszystko)
 for i in wszystko:
     print(i[0], sum(i[1]),' ', end='')
     for inx, j in enumerate(i[1]):
