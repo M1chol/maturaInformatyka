@@ -44,7 +44,7 @@ print(insertion_sort([6,2,7,9,2,76,3,10,5,1]))
 
 def szyfr_cezar(slowo: str, klucz: int) -> str:
     """
-    Akgorytm szyfru cezara
+    Algorytm szyfru cezara
     :param slowo: slowo do zaszyfrowania
     :param klucz: klucz szyfrowania
     :return: zaszyfrowany tekst
