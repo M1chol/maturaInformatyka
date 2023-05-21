@@ -213,3 +213,18 @@ def zmiana_systemu(liczba: str, system_org: int, system_doc: int) -> str:
     return dec_to(dec, system_doc)
 
 print(zmiana_systemu('F12', 16, 8))
+
+def potega(liczba: int, pot: int) -> int:
+    """
+    funkcja podnoszenia do potęgi o złożoności log(n)
+    :param liczba: liczba
+    :param pot: potęga
+    :return: wynik
+    """
+    w=1
+    while pot>0:
+        if pot%2==1:
+            w*=liczba
+        liczba*=liczba
+        pot//=2
+    return w
